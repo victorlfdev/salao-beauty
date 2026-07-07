@@ -23,7 +23,7 @@ const jsonLd = {
   areaServed: landingData.business.city,
   telephone: landingData.business.phone,
   image: landingData.hero.poster,
-  url: "https://salaobeauty.demo/",
+  url: "https://salao-beauty.vercel.app/",
   sameAs: [
     landingData.business.instagram,
     landingData.business.linktree,

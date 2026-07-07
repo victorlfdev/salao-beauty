@@ -16,7 +16,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://salaobeauty.demo"),
+  metadataBase: new URL("https://salao-beauty.vercel.app"),
   title: "Salão Beauty | Cortes, Mechas e Produções de Beleza Premium",
   description:
     "Agende seu horário no Salão Beauty, espaço dedicado a cortes autorais, mechas personalizadas, produção de eventos e mentoria profissional.",
@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     title: "Salão Beauty | Cortes, Mechas e Produções de Beleza Premium",
     description:
       "Agende seu horário no Salão Beauty, espaço dedicado a cortes autorais, mechas personalizadas, produção de eventos e mentoria profissional.",
-    url: "https://salaobeauty.demo/",
+    url: "https://salao-beauty.vercel.app/",
     images: [
       {
-        url: "/beauty/logo.png",
+        url: "/beauty/og-image.jpg",
         width: 1200,
         height: 630,
         alt: landingData.business.name,
