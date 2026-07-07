@@ -27,7 +27,7 @@ export function FAQSection() {
             return (
               <div
                 key={item.question}
-                className="overflow-hidden rounded-[26px] border bg-[rgba(255,250,246,0.76)] transition-colors hover:border-[var(--champagne)]"
+                className="overflow-hidden rounded-[26px] border bg-[var(--faq-bg)] transition-colors hover:bg-[var(--faq-bg-hover)] hover:border-[var(--champagne)]"
               >
                 <button
                   type="button"

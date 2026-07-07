@@ -81,7 +81,7 @@ export function HeroSection() {
             {landingData.socialProof.slice(0, 3).map((item) => (
               <div
                 key={item.label}
-                className="rounded-3xl border bg-[rgba(255,253,249,0.88)] px-4 py-4 backdrop-blur-xl"
+                className="rounded-3xl border bg-[var(--glass-bg)] px-4 py-4 backdrop-blur-xl"
               >
                 <p className="text-sm font-semibold text-[var(--muted-strong)]">
                   {item.label}
@@ -98,9 +98,9 @@ export function HeroSection() {
           transition={{ duration: 0.85, delay: 0.12 }}
           className="relative"
         >
-          <div className="absolute inset-x-[12%] top-8 h-40 rounded-full bg-[radial-gradient(circle,rgba(200,134,123,0.22),transparent_72%)] blur-3xl" />
-          <div className="relative overflow-hidden rounded-[32px] border bg-[var(--surface)] shadow-[0_26px_72px_rgba(132,96,80,0.14)]">
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.28),rgba(255,248,242,0.1))]" />
+          <div className="absolute inset-x-[12%] top-8 h-40 rounded-full bg-[radial-gradient(circle,rgba(212,175,55,0.15),transparent_72%)] blur-3xl" />
+          <div className="relative overflow-hidden rounded-[32px] border bg-[var(--surface)] shadow-[0_26px_72px_rgba(0,0,0,0.45)]">
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.05),transparent)]" />
             <video
               autoPlay
               muted
@@ -112,14 +112,14 @@ export function HeroSection() {
             >
               <source src={landingData.hero.video} type="video/mp4" />
             </video>
-            <div className="absolute inset-0 border-t border-white/25" />
-            <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-[linear-gradient(180deg,rgba(255,255,255,0.22),transparent)]" />
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(180deg,rgba(255,255,255,0),rgba(255,248,242,0.48))]" />
+            <div className="absolute inset-0 border-t border-white/10" />
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-[linear-gradient(180deg,rgba(18,16,14,0.35),transparent)]" />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(180deg,transparent,rgba(10,9,8,0.85))]" />
           </div>
           <motion.div
             animate={{ y: [0, -8, 0] }}
             transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-            className="absolute -left-2 top-8 rounded-[28px] border bg-[rgba(255,253,249,0.94)] px-5 py-4 backdrop-blur-xl sm:-left-6"
+            className="absolute -left-2 top-8 rounded-[28px] border bg-[var(--glass-bg)] px-5 py-4 backdrop-blur-xl sm:-left-6"
           >
             <p className="text-xs uppercase tracking-[0.3em] text-[var(--gold)]">
               Experiência premium
@@ -135,9 +135,9 @@ export function HeroSection() {
             aria-label="Ligar para o salão"
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 4.4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-            className="absolute -right-2 bottom-8 flex items-center gap-3 rounded-full border bg-[rgba(255,253,249,0.97)] px-5 py-3 backdrop-blur-xl sm:-right-6"
+            className="absolute -right-2 bottom-8 flex items-center gap-3 rounded-full border bg-[var(--glass-bg)] px-5 py-3 backdrop-blur-xl sm:-right-6"
           >
-            <span className="h-2.5 w-2.5 rounded-full bg-[var(--champagne)] shadow-[0_0_18px_rgba(245,223,189,0.85)]" />
+            <span className="h-2.5 w-2.5 rounded-full bg-[var(--champagne)] shadow-[0_0_18px_rgba(238,197,144,0.85)]" />
             <span className="text-sm font-semibold">{landingData.business.phone}</span>
           </motion.a>
           <div className="absolute inset-x-[10%] bottom-0 h-px bg-[var(--gradient-premium)]" />

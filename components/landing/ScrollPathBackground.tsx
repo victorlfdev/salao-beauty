@@ -108,7 +108,7 @@ export function ScrollPathBackground() {
         >
           <path
             d="M2792.03 172.022C2792.03 172.022 883.031 446.022 655.531 1936.52C428.031 3427.02 2748.63 2029.79 2450.03 4282.52C2193.71 6216.34 -165.469 6669.52 958.031 4789.02C2081.53 2908.52 3924.03 8337.02 172.031 9039.02"
-            stroke="rgba(70, 59, 0, 0.12)"
+            stroke="var(--scroll-stroke-bg)"
             strokeWidth="344"
             strokeLinecap="round"
           />
@@ -128,8 +128,8 @@ export function ScrollPathBackground() {
               y2="9779.02"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#AC9200" />
-              <stop offset="1" stopColor="#463B00" />
+              <stop stopColor="var(--scroll-active-start)" />
+              <stop offset="1" stopColor="var(--scroll-active-end)" />
             </linearGradient>
           </defs>
         </svg>

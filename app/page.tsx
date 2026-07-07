@@ -23,7 +23,7 @@ const jsonLd = {
   areaServed: landingData.business.city,
   telephone: landingData.business.phone,
   image: landingData.hero.poster,
-  url: "https://example.com/",
+  url: "https://salaobeauty.demo/",
   sameAs: [
     landingData.business.instagram,
     landingData.business.linktree,
@@ -41,7 +41,7 @@ export default function Home() {
       />
       <SmoothScroll />
       <div className="relative overflow-x-clip bg-[var(--bg)] text-[var(--text)]">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(221,182,122,0.18),transparent_28%),radial-gradient(circle_at_85%_18%,rgba(200,134,123,0.12),transparent_20%),linear-gradient(180deg,rgba(255,255,255,0.82),rgba(255,255,255,0.18)_26%,transparent_46%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(212,175,55,0.12),transparent_30%),radial-gradient(circle_at_85%_18%,rgba(229,168,148,0.08),transparent_25%),linear-gradient(180deg,rgba(10,9,8,0.85),rgba(10,9,8,0.18)_26%,transparent_46%)]" />
         <Navbar />
         <main className="spotlight relative z-0">
           <ScrollPathBackground />

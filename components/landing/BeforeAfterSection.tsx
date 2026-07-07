@@ -36,7 +36,7 @@ export function BeforeAfterSection() {
                     height={720}
                     className="h-64 w-full object-cover"
                   />
-                  <span className="absolute left-3 top-3 rounded-full border bg-[rgba(255,255,255,0.84)] px-3 py-1 text-[11px] uppercase tracking-[0.25em] text-[var(--champagne)]">
+                  <span className="absolute left-3 top-3 rounded-full border bg-[var(--before-after-badge-bg)] px-3 py-1 text-[11px] uppercase tracking-[0.25em] text-[var(--champagne)]">
                     Antes
                   </span>
                 </div>
@@ -48,7 +48,7 @@ export function BeforeAfterSection() {
                     height={720}
                     className="h-64 w-full object-cover"
                   />
-                  <span className="absolute left-3 top-3 rounded-full border bg-[rgba(255,255,255,0.84)] px-3 py-1 text-[11px] uppercase tracking-[0.25em] text-[var(--champagne)]">
+                  <span className="absolute left-3 top-3 rounded-full border bg-[var(--before-after-badge-bg)] px-3 py-1 text-[11px] uppercase tracking-[0.25em] text-[var(--champagne)]">
                     Depois
                   </span>
                 </div>

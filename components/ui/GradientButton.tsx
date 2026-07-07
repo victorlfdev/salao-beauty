@@ -28,7 +28,7 @@ export function GradientButton({
     variant === "primary"
       ? "premium-border bg-[var(--surface-soft)] text-[var(--text)]"
       : variant === "secondary"
-        ? "border bg-[rgba(255,250,246,0.72)] text-[var(--text)] hover:border-[var(--champagne)] hover:bg-[rgba(255,250,246,0.94)]"
+        ? "border bg-[var(--button-secondary-bg)] text-[var(--text)] hover:border-[var(--champagne)] hover:bg-[var(--button-secondary-hover-bg)]"
         : "text-[var(--muted-strong)] hover:text-[var(--text)]";
 
   const content = (

@@ -16,18 +16,18 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com"),
-  title: "Cleuza Priori | Salao de Beleza em Sao Carlos",
+  metadataBase: new URL("https://salaobeauty.demo"),
+  title: "Salão Beauty | Cortes, Mechas e Produções de Beleza Premium",
   description:
-    "Agende seu horario no Cleuza Priori, salao de beleza em Sao Carlos dedicado a cuidado, estilo e autoestima.",
+    "Agende seu horário no Salão Beauty, espaço dedicado a cortes autorais, mechas personalizadas, produção de eventos e mentoria profissional.",
   openGraph: {
-    title: "Cleuza Priori | Salao de Beleza em Sao Carlos",
+    title: "Salão Beauty | Cortes, Mechas e Produções de Beleza Premium",
     description:
-      "Agende seu horario no Cleuza Priori, salao de beleza em Sao Carlos dedicado a cuidado, estilo e autoestima.",
-    url: "https://example.com/",
+      "Agende seu horário no Salão Beauty, espaço dedicado a cortes autorais, mechas personalizadas, produção de eventos e mentoria profissional.",
+    url: "https://salaobeauty.demo/",
     images: [
       {
-        url: "/beauty/og-cleuza.svg",
+        url: "/beauty/logo.png",
         width: 1200,
         height: 630,
         alt: landingData.business.name,

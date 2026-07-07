@@ -90,8 +90,8 @@ export function GallerySection() {
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-[1.04] group-hover:rotate-[0.8deg]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[rgba(255,252,248,0.34)] via-[rgba(255,250,246,0.28)] to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
-              <figcaption className="absolute inset-x-0 bottom-0 p-5 text-sm text-[var(--muted-strong)] bg-gradient-to-t from-[rgba(255,252,248,0.92)] to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+              <div className="absolute inset-0 bg-[var(--gallery-overlay-bg)] opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
+              <figcaption className="absolute inset-x-0 bottom-0 p-5 text-sm text-[var(--muted-strong)] bg-[var(--gallery-caption-bg)] opacity-0 transition-opacity duration-500 group-hover:opacity-100 text-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
                 {image.alt}
               </figcaption>
             </motion.figure>

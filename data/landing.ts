@@ -110,253 +110,252 @@ export type LandingData = {
 
 export const landingData: LandingData = {
   business: {
-    name: "Cleuza Priori",
-    category: "Salão de beleza",
-    city: "São Carlos",
-    phone: "(16) 99355-0770",
-    whatsapp: "5516993550770",
-    instagram: "https://www.instagram.com/cleuzapriori/",
-    linktree:
-      "https://linktr.ee/cleuzapriori?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
-    maps: "https://maps.app.goo.gl/2L8QFdw7b9HS1Am96",
+    name: "Salão Beauty",
+    category: "Salão de Beleza & Estética",
+    city: "São Paulo",
+    phone: "(11) 99999-9999",
+    whatsapp: "5511999999999",
+    instagram: "https://www.instagram.com/salaobeauty.demo/",
+    linktree: "https://linktr.ee/salaobeauty.demo",
+    maps: "https://maps.app.goo.gl/yQ3nC78T2hZ8nPlaceholder",
     shortDescription:
-      "Especialista em cortes e mechas personalizadas, noivas e debutantes, com formação profissional em cursos VIP e em grupo.",
+      "Experiência de beleza premium com cortes autorais, mechas personalizadas, produção de eventos e formação profissional em cursos VIP e em grupo.",
     logo: "/beauty/logo.png",
   },
   hero: {
-    eyebrow: "SALÃO DE BELEZA EM SÃO CARLOS",
-    title: "Cortes, mechas e produções especiais com assinatura personalizada",
-    highlightedWord: "personalizada",
+    eyebrow: "EXPERIÊNCIA DE BELEZA PREMIUM EM SÃO PAULO",
+    title: "Realce sua identidade com cortes e mechas sob medida",
+    highlightedWord: "identidade",
     subtitle:
-      "Cleuza Priori é especialista em cortes e mechas personalizadas, atendimento para noivas e debutantes, além de formação profissional com cursos VIP e em grupo.",
+      "O Salão Beauty reúne sofisticação, técnica avançada e atendimento personalizado para criar produções marcantes e formar profissionais de destaque.",
     primaryCta: "Agendar agora",
     secondaryCta: "Ver localização",
     tertiaryCta: "Conhecer Instagram",
     video: "/beauty/hero-premium.mp4",
-    poster: "/beauty/hero-premium.svg",
+    poster: "/beauty/logo.png",
     mediaAlt:
-      "Vídeo editorial suave com tons nude, rosé e champagne para o hero da landing page",
+      "Vídeo editorial de beleza premium com tons bronze, champagne e iluminação dourada.",
   },
   socialProof: [
     {
       iconSvg:
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><path d="M8.2 7.8 20 19.5"/><path d="M8.2 16.2 14 10.5"/><path d="M14.8 9.7 20 4.5"/></svg>',
-      value: "Especialista",
+      value: "Especialistas",
       label: "Cortes e mechas",
       description:
-        "Atendimento focado em cortes autorais e mechas personalizadas para valorizar cada cliente.",
+        "Atendimento focado em cortes autorais e mechas sob medida para valorizar cada cliente.",
     },
     {
       iconSvg:
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M7 5h10a2 2 0 0 1 2 2v10l-4-2-4 2-4-2-2 1V7a2 2 0 0 1 2-2Z"/><path d="M9 9h6"/><path d="M9 12h4"/></svg>',
-      value: "Atendimento direto",
-      label: "Agendamento fácil",
+      value: "Agendamento rápido",
+      label: "Atendimento direto",
       description:
-        "Entre em contato por telefone, Instagram, Linktree ou Google Maps com poucos cliques.",
+        "Entre em contato pelo WhatsApp, Instagram, Linktree ou Google Maps de forma simples.",
     },
     {
       iconSvg:
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s7-4.35 7-10a7 7 0 1 0-14 0c0 5.65 7 10 7 10Z"/><path d="M12 11.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg>',
-      value: "Noivas e debutantes",
+      value: "Eventos & Noivas",
       label: "Produções especiais",
       description:
-        "Experiência pensada para datas marcantes com cuidado, técnica e acabamento refinado.",
+        "Cuidado pensado para datas memoráveis com técnica de alta performance e acabamento refinado.",
     },
     {
       iconSvg:
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><path d="M3 9.5 12 5l9 4.5-9 4.5L3 9.5Z"/><path d="M7 11.5V15c0 1.4 2.24 3 5 3s5-1.6 5-3v-3.5"/><path d="M21 9.5V15"/><path d="M21 15c0 1-.67 1.8-1.5 2.2"/></svg>',
-      value: "Cursos VIP e em grupo",
+      value: "Cursos e Mentoria",
       label: "Formação profissional",
       description:
-        "Cursos voltados a profissionais que desejam aperfeiçoar técnica, atendimento e confiança no dia a dia.",
+        "Cursos práticos para profissionais que buscam aperfeiçoar técnica, postura e atendimento.",
     },
   ],
   services: [
     {
       title: "Cortes personalizados",
       description:
-        "Cortes desenhados para valorizar estilo, rotina, formato de rosto e identidade.",
+        "Cortes desenhados sob medida para valorizar seu estilo, tipo de fio e formato de rosto.",
       image: "/beauty/service-cut.jpg",
       badge: "Assinatura",
     },
     {
       title: "Mechas personalizadas",
       description:
-        "Iluminações e mechas sob medida para criar brilho, contraste e naturalidade.",
+        "Iluminações planejadas para criar contraste elegante, profundidade e brilho natural.",
       image: "/beauty/service-light.png",
       badge: "Luzes",
     },
     {
       title: "Coloração sofisticada",
       description:
-        "Tons elegantes e planejados com foco em harmonia visual e segurança dos fios.",
+        "Tons elegantes criados com foco na integridade capilar e na harmonia do visual.",
       image: "/beauty/service-color.jpg",
       badge: "Cor",
     },
     {
-      title: "Noivas e debutantes",
+      title: "Eventos e Noivas",
       description:
-        "Produções especiais para ocasiões memoráveis com acabamento impecável e presença premium.",
+        "Preparação e produções marcantes para casamentos, debutantes e ocasiões memoráveis.",
       image: "/beauty/service-event.png",
-      badge: "Eventos",
+      badge: "Produção",
     },
     {
       title: "Tratamentos capilares",
       description:
-        "Cuidados para restaurar brilho, maciez, força e saúde dos fios no dia a dia.",
+        "Cronogramas e terapias capilares de alta qualidade para recuperar a saúde e a força dos fios.",
       image: "/beauty/service-care.jpg",
-      badge: "Cuidado",
+      badge: "Terapia",
     },
     {
-      title: "Cursos VIP e em grupo",
+      title: "Cursos VIP & Workshops",
       description:
-        "Formação para profissionais que desejam evoluir técnica, repertório e posicionamento.",
+        "Mentoria profissional e formação técnica para quem deseja atuar em alto nível.",
       image: "/beauty/service-style.jpg",
-      badge: "Educação",
+      badge: "Formação",
     },
   ],
   experience: {
-    eyebrow: "EXPERIÊNCIA CLEUZA PRIORI",
-    title: "Beleza, técnica e cuidado em cada atendimento.",
+    eyebrow: "ESSÊNCIA SALÃO BEAUTY",
+    title: "Beleza, sofisticação e cuidado em cada detalhe.",
     description:
-      "A proposta une sensibilidade estética, personalização e atenção aos detalhes para transformar o atendimento em uma experiência memorável.",
-    image: "/beauty/experience-editorial.png",
+      "A proposta do Salão Beauty une sensibilidade artística, rigor técnico e atenção cuidadosa para transformar o atendimento tradicional em uma experiência inesquecível de autocuidado.",
+    image: "/beauty/experience-editorial-1.jpg",
     highlights: [
-      "Especialista em cortes e mechas",
-      "Atendimento para noivas e debutantes",
-      "Cuidado personalizado do início ao fim",
-      "Cursos VIP e formação em grupo",
+      "Especialistas em mechas e cor",
+      "Atendimento exclusivo para eventos",
+      "Diagnóstico capilar personalizado",
+      "Cursos técnicos e profissionalizantes",
     ],
   },
   beforeAfter: {
-    title: "Resultados que valorizam sua beleza",
+    title: "Transformações de alto padrão",
     subtitle:
-      "Use esta área para destacar transformações, antes e depois, ou resultados reais do salão.",
+      "Acompanhe alguns resultados reais desenvolvidos pela nossa equipe de estilistas e coloristas.",
     items: [
       {
         title: "Corte com acabamento leve e elegante",
-        beforeImage: "/beauty/gallery-1.svg",
-        afterImage: "/beauty/gallery-2.svg",
+        beforeImage: "/beauty/gallery-1.jpg",
+        afterImage: "/beauty/gallery-2.png",
       },
       {
         title: "Mechas para brilho e movimento",
-        beforeImage: "/beauty/gallery-3.svg",
-        afterImage: "/beauty/gallery-4.svg",
+        beforeImage: "/beauty/gallery-3.jpg",
+        afterImage: "/beauty/gallery-4.png",
       },
       {
         title: "Produção especial com resultado refinado",
-        beforeImage: "/beauty/gallery-5.svg",
-        afterImage: "/beauty/gallery-6.svg",
+        beforeImage: "/beauty/gallery-5.jpg",
+        afterImage: "/beauty/gallery-6.jpg",
       },
     ],
   },
   gallery: {
-    title: "Beleza em cada detalhe",
+    title: "Nosso ambiente premium",
     subtitle:
-      "Ambiente, atendimento, finalizações e bastidores apresentados em uma galeria clara, elegante e fácil de adaptar com fotos reais do cliente.",
+      "Visite a nossa galeria e conheça o espaço planejado para o seu conforto, os bastidores e os acabamentos perfeitos.",
     images: [
       {
-        src: "/beauty/gallery-1.png",
-        alt: "Atendimento personalizado e preparação cuidadosa",
-        version: "2026-04-28",
+        src: "/beauty/gallery-1.jpg",
+        alt: "Atendimento focado e diagnóstico personalizado",
+        version: "2026-07-07",
       },
       {
         src: "/beauty/gallery-2.png",
-        alt: "Finalização sofisticada em destaque",
+        alt: "Finalização leve com brilho e textura refinada",
       },
       {
-        src: "/beauty/gallery-3.png",
-        alt: "Ambiente acolhedor com percepção premium",
+        src: "/beauty/gallery-3.jpg",
+        alt: "Nosso salão com iluminação moderna e acolhedora",
       },
       {
         src: "/beauty/gallery-4.png",
-        alt: "Produtos, iluminação e composição visual",
+        alt: "Mix de produtos profissionais selecionados",
       },
       {
-        src: "/beauty/gallery-5.png",
-        alt: "Rotina de cuidado com acabamento delicado",
+        src: "/beauty/gallery-5.jpg",
+        alt: "Terapia capilar com produtos de alta performance",
       },
       {
-        src: "/beauty/gallery-6.png",
-        alt: "Bastidores e resultado profissional",
+        src: "/beauty/gallery-6.jpg",
+        alt: "Detalhes do design de corte e acabamento final",
       },
     ],
   },
   instagram: {
-    title: "Acompanhe inspirações, resultados e novidades",
+    title: "Acompanhe nosso feed e inspirações",
     subtitle:
-      "Direcione o visitante para o Instagram oficial e transforme a presença digital em prova social contínua para o salão.",
-    handle: "@cleuzapriori",
-    cta: "Ver Instagram",
+      "Fique por dentro das novidades, tendências de cortes, técnicas de iluminação e dicas exclusivas de cuidados.",
+    handle: "@salaobeauty.demo",
+    cta: "Seguir no Instagram",
   },
   location: {
-    title: "Encontre o Cleuza Priori",
+    title: "Encontre o Salão Beauty",
     subtitle:
-      "Mostre onde o salão está e reduza a fricção para visitas, rotas e contato imediato.",
-    city: "São Carlos",
-    mapsUrl: "https://maps.app.goo.gl/2L8QFdw7b9HS1Am96",
-    phone: "(16) 99355-0770",
+      "Venha nos visitar. Nosso espaço está localizado em uma região privilegiada, com estacionamento e conforto para o seu atendimento.",
+    city: "São Paulo",
+    mapsUrl: "https://www.google.com/maps/@-23.2778814,-46.8959286,8.25z",
+    phone: "(11) 99999-9999",
   },
   testimonials: [
     {
-      name: "Rosana Patrícia Petilli",
-      text: "Sempre muito bem atendida por toda a equipe. Excelentes profissionais.",
+      name: "Mariana Souza",
+      text: "Fui super bem atendida e o resultado das minhas mechas ficou maravilhoso! Recomendo muito toda a equipe do salão.",
       rating: 5,
     },
     {
-      name: "Pricila Pasian",
-      text: "Para o meu casamento, confiei cabelo, maquiagem e manicure ao salão. Tudo ficou impecável, sem atrasos e acima da minha expectativa.",
+      name: "Priscilla Fernandes",
+      text: "Para o meu grande dia, confiei cabelo e maquiagem aos profissionais do salão. Tudo ficou impecável, no prazo e superou todas as minhas expectativas.",
       rating: 5,
     },
     {
-      name: "Vanessa Vasconcelos",
-      text: "Atendimento incrível, profissionais atenciosas e um lugar realmente encantador.",
+      name: "Vanessa Albuquerque",
+      text: "Ambiente encantador, atendimento super atencioso e produtos de excelente qualidade. Sem dúvidas, o melhor salão.",
       rating: 5,
     },
   ],
   faq: [
     {
-      question: "Como faço para agendar?",
+      question: "Como posso agendar um horário?",
       answer:
-        "Você pode entrar em contato pelo telefone, Instagram, Linktree ou abrir a rota no Google Maps para mais informações.",
+        "Você pode agendar de forma prática clicando nos botões de WhatsApp, Instagram ou entrando em contato por telefone para verificar horários disponíveis.",
     },
     {
-      question: "O salão atende noivas e debutantes?",
+      question: "O salão realiza produções completas para noivas?",
       answer:
-        "Sim. O posicionamento atual destaca atendimentos e produções especiais para noivas e debutantes.",
+        "Sim! Temos pacotes personalizados para noivas, debutantes e madrinhas, oferecendo testes e acompanhamento com total atenção.",
     },
     {
-      question: "Vocês oferecem cursos?",
+      question: "Quais são as marcas de produtos utilizadas?",
       answer:
-        "Sim. O salão também comunica formação profissional com cursos VIP e em grupo.",
+        "Trabalhamos exclusivamente com marcas importadas e nacionais de alta performance (premium) para garantir a saúde e o brilho dos seus fios.",
     },
     {
-      question: "Posso conhecer mais sobre os serviços e atendimentos?",
+      question: "Vocês têm cursos de formação profissional?",
       answer:
-        "Sim. Pelo Instagram, Linktree e contato direto você acompanha novidades, tira dúvidas e encontra a melhor forma de agendar seu atendimento.",
+        "Sim, promovemos cursos VIP práticos e workshops em grupo voltados para o aperfeiçoamento de profissionais em técnicas de cortes e cor.",
     },
   ],
   finalCta: {
-    title: "Pronta para viver sua melhor versão?",
+    title: "Pronta para vivenciar sua melhor versão?",
     subtitle:
-      "Agende seu horário e descubra uma experiência de beleza pensada para valorizar seu estilo, seu momento e sua autoestima.",
+      "Reserve seu momento de beleza e desfrute de um atendimento completo em um ambiente planejado para o seu conforto.",
     buttons: [
       { label: "Agendar agora", kind: "primary", variant: "primary" },
-      { label: "Chamar no Instagram", kind: "instagram", variant: "secondary" },
+      { label: "Ver Instagram", kind: "instagram", variant: "secondary" },
       { label: "Ver localização", kind: "maps", variant: "ghost" },
     ],
   },
   footer: {
     description:
-      "Cortes, mechas, produções especiais e formação profissional com o cuidado e a assinatura de Cleuza Priori.",
+      "Cortes autorais, mechas personalizadas, produções refinadas e formação profissional com a assinatura de excelência Salão Beauty.",
     links: [
-      { label: "Instagram", href: "https://www.instagram.com/cleuzapriori/" },
+      { label: "Instagram", href: "https://www.instagram.com/salaobeauty.demo/" },
       {
         label: "Linktree",
-        href: "https://linktr.ee/cleuzapriori?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
+        href: "https://linktr.ee/salaobeauty.demo",
       },
-      { label: "Google Maps", href: "https://maps.app.goo.gl/2L8QFdw7b9HS1Am96" },
-      { label: "Telefone", href: "tel:+551633745670" },
+      { label: "Google Maps", href: "https://maps.app.goo.gl/yQ3nC78T2hZ8nPlaceholder" },
+      { label: "Telefone", href: "tel:+5511999999999" },
     ],
   },
 };

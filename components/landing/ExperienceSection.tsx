@@ -46,7 +46,7 @@ export function ExperienceSection() {
         </div>
 
         <div ref={imageRef} className="relative">
-          <div className="absolute inset-x-[18%] top-8 h-48 rounded-full bg-[radial-gradient(circle,rgba(214,179,106,0.2),transparent_65%)] blur-3xl" />
+          <div className="absolute inset-x-[18%] top-8 h-48 rounded-full bg-[radial-gradient(circle,rgba(212,175,55,0.12),transparent_65%)] blur-3xl" />
           <motion.div style={{ y }} className="relative overflow-hidden rounded-[32px] border">
             <Image
               src={landingData.experience.image}
@@ -55,7 +55,7 @@ export function ExperienceSection() {
               height={1120}
               className="h-[500px] w-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(255,248,242,0.48)] via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,9,8,0.72)] via-transparent to-transparent" />
           </motion.div>
         </div>
       </div>

@@ -12,7 +12,7 @@ export function LocationSection() {
     <AnimatedSection id="localizacao" className="section-space">
       <div className="container-shell grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
         <GlassCard className="relative min-h-[420px] overflow-hidden p-6">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(221,182,122,0.18),transparent_18%),radial-gradient(circle_at_75%_35%,rgba(200,134,123,0.16),transparent_22%),linear-gradient(180deg,rgba(255,255,255,0.42),transparent_36%)]" />
+          <div className="absolute inset-0 bg-[var(--location-gradient)]" />
           <div className="noise-overlay absolute inset-0" />
           <div className="relative flex h-full flex-col justify-between">
             <SectionHeading
@@ -26,16 +26,16 @@ export function LocationSection() {
               target="_blank"
               rel="noreferrer"
               aria-label="Abrir localização do salão no Google Maps"
-              className="relative block overflow-hidden rounded-[28px] border bg-[rgba(255,255,255,0.82)] p-6 transition-transform duration-300 hover:scale-[1.01]"
+              className="relative block overflow-hidden rounded-[28px] border bg-[var(--location-card-bg)] p-6 transition-transform duration-300 hover:scale-[1.01]"
             >
               <div
                 className="absolute inset-0 bg-cover bg-center opacity-90"
-                style={{ backgroundImage: "url('/beauty/maps.png')" }}
+                style={{ backgroundImage: "url('/beauty/maps.jpg')" }}
               />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,253,249,0.62),rgba(255,253,249,0.1))]" />
+              <div className="absolute inset-0 bg-[var(--location-overlay-gradient)]" />
               <div className="relative">
                 <p className="text-xs uppercase tracking-[0.3em] text-[var(--gold)]">Cidade</p>
-                <p className="mt-3 text-3xl font-semibold">{landingData.location.city}</p>
+                <p className="mt-3 text-3xl font-semibold text-black">{landingData.location.city}</p>
                 <div className="mt-6 h-px w-full bg-[var(--gradient-premium)]" />
               </div>
             </a>

@@ -9,7 +9,7 @@ export function Footer() {
             {landingData.business.name}
           </p>
           <p className="mt-3 leading-7">
-            Cortes, mechas, produções especiais e formação profissional com o cuidado e a assinatura de Cleuza Priori.
+            {landingData.footer.description}
           </p>
         </div>
 

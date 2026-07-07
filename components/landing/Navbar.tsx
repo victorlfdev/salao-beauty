@@ -38,8 +38,8 @@ export function Navbar() {
       >
         <div
           className={cn(
-            "mx-auto flex max-w-5xl items-center justify-between rounded-full border bg-[rgba(255,250,246,0.78)] px-4 py-3 backdrop-blur-xl transition-all duration-300 sm:px-5",
-            isScrolled && "shadow-[0_16px_42px_rgba(91,64,53,0.14)]",
+            "mx-auto flex max-w-5xl items-center justify-between rounded-full border bg-[var(--navbar-bg)] px-4 py-3 backdrop-blur-xl transition-all duration-300 sm:px-5",
+            isScrolled && "shadow-[var(--navbar-shadow)]",
           )}
         >
           <a
@@ -52,7 +52,7 @@ export function Navbar() {
               alt={`Logo da ${landingData.business.name}`}
               width={40}
               height={40}
-              className="flex h-10 w-10 items-center justify-center rounded-full border bg-white/70 text-sm font-semibold tracking-[0.25em] text-[var(--champagne)]"
+              className="flex h-10 w-10 items-center justify-center rounded-full border bg-[var(--surface-soft)] text-sm font-semibold tracking-[0.25em] text-[var(--champagne)]"
             />
             <div className="hidden sm:block">
               <p className="text-sm font-semibold">{landingData.business.name}</p>
@@ -89,7 +89,7 @@ export function Navbar() {
             </div>
             <button
               type="button"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border bg-white/70 text-[var(--text)] lg:hidden"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border bg-[var(--surface-soft)] text-[var(--text)] lg:hidden"
               aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
               onClick={() => setIsOpen((value) => !value)}
             >
@@ -99,14 +99,14 @@ export function Navbar() {
         </div>
 
         {isOpen ? (
-          <div className="mx-auto mt-3 max-w-5xl rounded-3xl border bg-[rgba(255,250,246,0.94)] p-4 backdrop-blur-xl lg:hidden">
+          <div className="mx-auto mt-3 max-w-5xl rounded-3xl border bg-[var(--surface-soft)] p-4 backdrop-blur-xl lg:hidden">
             <div className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
                   aria-label={`Ir para ${item.label}`}
-                  className="rounded-2xl px-4 py-3 text-sm text-[var(--muted)] transition-colors hover:bg-[rgba(191,125,114,0.08)] hover:text-[var(--text)]"
+                  className="rounded-2xl px-4 py-3 text-sm text-[var(--muted)] transition-colors hover:bg-[var(--button-secondary-bg)] hover:text-[var(--text)]"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}

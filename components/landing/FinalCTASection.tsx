@@ -20,8 +20,8 @@ export function FinalCTASection() {
   return (
     <AnimatedSection className="section-space pb-12">
       <div className="container-shell">
-        <div className="overflow-hidden rounded-[36px] border bg-[linear-gradient(180deg,rgba(255,253,249,0.96),rgba(248,238,229,0.86))]">
-          <Marquee text="BELEZA • CUIDADO • AUTOESTIMA • ELEGÂNCIA • CLEUZA PRIORI •" />
+        <div className="overflow-hidden rounded-[36px] border bg-[var(--final-cta-bg)]">
+          <Marquee text={`BELEZA • CUIDADO • AUTOESTIMA • ELEGÂNCIA • ${landingData.business.name.toUpperCase()} •`} />
           <div className="px-5 py-12 text-center sm:px-8 sm:py-16">
             <p className="text-xs uppercase tracking-[0.35em] text-[var(--gold)]">
               AGENDE SEU HORÁRIO

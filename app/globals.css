@@ -1,19 +1,46 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #f7f1ea;
-  --surface: #fffdf9;
-  --surface-soft: #fff8f2;
-  --surface-light: #f6ede5;
-  --text: #2f221e;
-  --muted: #796660;
-  --muted-strong: #564640;
-  --stroke: rgba(80, 53, 44, 0.12);
-  --stroke-strong: rgba(80, 53, 44, 0.22);
-  --gold: #a97828;
-  --rose: #b8746b;
-  --champagne: #ddb67a;
-  --gradient-premium: linear-gradient(90deg, #b88735 0%, #c6867b 48%, #efcf9d 100%);
+  --bg: #0a0908;
+  --bg-rgb: 10, 9, 8;
+  --surface: #12100e;
+  --surface-rgb: 18, 16, 14;
+  --surface-soft: #1a1715;
+  --surface-light: #24201e;
+  --text: #f4efe9;
+  --muted: #a3948e;
+  --muted-strong: #c7bbb6;
+  --stroke: rgba(244, 239, 233, 0.08);
+  --stroke-strong: rgba(244, 239, 233, 0.16);
+  --gold: #d4af37;
+  --rose: #e5a894;
+  --champagne: #eec590;
+  --gradient-premium: linear-gradient(90deg, #d4af37 0%, #e5a894 50%, #eec590 100%);
+
+  /* Theme variables for inline colors in components */
+  --navbar-bg: rgba(18, 16, 14, 0.82);
+  --navbar-shadow: rgba(0, 0, 0, 0.4);
+  --button-secondary-bg: rgba(244, 239, 233, 0.06);
+  --button-secondary-hover-bg: rgba(244, 239, 233, 0.12);
+  --glass-bg: rgba(18, 16, 14, 0.85);
+  --glass-shadow: rgba(0, 0, 0, 0.35);
+  --glass-border: rgba(244, 239, 233, 0.08);
+  --before-after-badge-bg: rgba(18, 16, 14, 0.8);
+  --services-overlay-from: rgba(10, 9, 8, 0.9);
+  --services-overlay-via: rgba(10, 9, 8, 0.5);
+  --services-overlay-to: rgba(10, 9, 8, 0.1);
+  --services-badge-bg: rgba(26, 23, 21, 0.85);
+  --faq-bg: rgba(18, 16, 14, 0.72);
+  --faq-bg-hover: rgba(26, 23, 21, 0.85);
+  --gallery-overlay-bg: linear-gradient(to top, rgba(10, 9, 8, 0.4) 0%, rgba(10, 9, 8, 0.2) 60%, transparent 100%);
+  --gallery-caption-bg: linear-gradient(to top, rgba(10, 9, 8, 0.95) 0%, transparent 100%);
+  --location-card-bg: rgba(18, 16, 14, 0.78);
+  --location-gradient: radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.12), transparent 25%), radial-gradient(circle at 75% 35%, rgba(229, 168, 148, 0.1), transparent 30%), linear-gradient(180deg, rgba(18, 16, 14, 0.5), transparent 45%);
+  --location-overlay-gradient: linear-gradient(180deg, rgba(18, 16, 14, 0.5) 0%, rgba(18, 16, 14, 0.1) 100%);
+  --final-cta-bg: linear-gradient(180deg, rgba(26, 23, 21, 0.96), rgba(10, 9, 8, 0.92));
+  --scroll-stroke-bg: rgba(244, 239, 233, 0.05);
+  --scroll-active-start: #d4af37;
+  --scroll-active-end: #e5a894;
 }
 
 @theme inline {
@@ -33,10 +60,10 @@ html {
 
 body {
   background:
-    radial-gradient(circle at top, rgba(221, 182, 122, 0.22), transparent 34%),
-    radial-gradient(circle at 85% 10%, rgba(200, 134, 123, 0.14), transparent 24%),
-    radial-gradient(circle at 10% 35%, rgba(255, 255, 255, 0.72), transparent 18%),
-    linear-gradient(180deg, #fffdf9 0%, #fbf4ee 48%, #f6eee7 100%),
+    radial-gradient(circle at top, rgba(212, 175, 55, 0.15), transparent 35%),
+    radial-gradient(circle at 85% 10%, rgba(229, 168, 148, 0.12), transparent 25%),
+    radial-gradient(circle at 10% 35%, rgba(18, 16, 14, 0.8), transparent 20%),
+    linear-gradient(180deg, #12100e 0%, #0a0908 50%, #050404 100%),
     var(--bg);
   color: var(--text);
 }
@@ -84,8 +111,9 @@ body {
 
   .glass-surface {
     @apply border backdrop-blur-xl;
-    background: rgba(255, 252, 248, 0.88);
-    box-shadow: 0 22px 60px rgba(132, 96, 80, 0.09);
+    background: var(--glass-bg);
+    border-color: var(--glass-border);
+    box-shadow: 0 22px 60px var(--glass-shadow);
   }
 
   .text-gradient {
@@ -106,8 +134,8 @@ body {
     opacity: 0.03;
     pointer-events: none;
     background-image:
-      linear-gradient(rgba(44, 32, 29, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(44, 32, 29, 0.04) 1px, transparent 1px);
+      linear-gradient(rgba(244, 239, 233, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(244, 239, 233, 0.06) 1px, transparent 1px);
     background-size: 28px 28px;
     mask-image: radial-gradient(circle at center, black, transparent 88%);
   }
