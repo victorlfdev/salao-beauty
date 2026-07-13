@@ -19,7 +19,7 @@ export function SocialProofSection() {
               transition={{ duration: 0.6, delay: index * 0.08 }}
             >
               <GlassCard className="h-full p-6">
-                <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-2xl border bg-white/70 text-[var(--gold)]">
+                <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-2xl border bg-black/70 text-[var(--gold)]">
                   <span
                     aria-hidden="true"
                     className="h-5 w-5 [&_svg]:h-5 [&_svg]:w-5"

@@ -20,7 +20,7 @@ export function FinalCTASection() {
   return (
     <AnimatedSection className="section-space pb-12">
       <div className="container-shell">
-        <div className="overflow-hidden rounded-[36px] border bg-[var(--final-cta-bg)]">
+        <div className="overflow-hidden rounded-[36px] border bg-[var(--final-cta-bg)] bg-black/20">
           <Marquee text={`BELEZA • CUIDADO • AUTOESTIMA • ELEGÂNCIA • ${landingData.business.name.toUpperCase()} •`} />
           <div className="px-5 py-12 text-center sm:px-8 sm:py-16">
             <p className="text-xs uppercase tracking-[0.35em] text-[var(--gold)]">

@@ -15,7 +15,12 @@
   --gold: #d4af37;
   --rose: #e5a894;
   --champagne: #eec590;
-  --gradient-premium: linear-gradient(90deg, #d4af37 0%, #e5a894 50%, #eec590 100%);
+  --gradient-premium: linear-gradient(
+    90deg,
+    #d4af37 0%,
+    #e5a894 50%,
+    #eec590 100%
+  );
 
   /* Theme variables for inline colors in components */
   --navbar-bg: rgba(18, 16, 14, 0.82);
@@ -32,12 +37,40 @@
   --services-badge-bg: rgba(26, 23, 21, 0.85);
   --faq-bg: rgba(18, 16, 14, 0.72);
   --faq-bg-hover: rgba(26, 23, 21, 0.85);
-  --gallery-overlay-bg: linear-gradient(to top, rgba(10, 9, 8, 0.4) 0%, rgba(10, 9, 8, 0.2) 60%, transparent 100%);
-  --gallery-caption-bg: linear-gradient(to top, rgba(10, 9, 8, 0.95) 0%, transparent 100%);
+  --gallery-overlay-bg: linear-gradient(
+    to top,
+    rgba(10, 9, 8, 0.4) 0%,
+    rgba(10, 9, 8, 0.2) 60%,
+    transparent 100%
+  );
+  --gallery-caption-bg: linear-gradient(
+    to top,
+    rgba(10, 9, 8, 0.95) 0%,
+    transparent 100%
+  );
   --location-card-bg: rgba(18, 16, 14, 0.78);
-  --location-gradient: radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.12), transparent 25%), radial-gradient(circle at 75% 35%, rgba(229, 168, 148, 0.1), transparent 30%), linear-gradient(180deg, rgba(18, 16, 14, 0.5), transparent 45%);
-  --location-overlay-gradient: linear-gradient(180deg, rgba(18, 16, 14, 0.5) 0%, rgba(18, 16, 14, 0.1) 100%);
-  --final-cta-bg: linear-gradient(180deg, rgba(26, 23, 21, 0.96), rgba(10, 9, 8, 0.92));
+  --location-gradient:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(212, 175, 55, 0.12),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 75% 35%,
+      rgba(229, 168, 148, 0.1),
+      transparent 30%
+    ),
+    linear-gradient(180deg, rgba(18, 16, 14, 0.5), transparent 45%);
+  --location-overlay-gradient: linear-gradient(
+    180deg,
+    rgba(18, 16, 14, 0.5) 0%,
+    rgba(18, 16, 14, 0.1) 100%
+  );
+  --final-cta-bg: linear-gradient(
+    180deg,
+    rgba(26, 23, 21, 0.96),
+    rgba(10, 9, 8, 0.92)
+  );
   --scroll-stroke-bg: rgba(244, 239, 233, 0.05);
   --scroll-active-start: #d4af37;
   --scroll-active-end: #e5a894;
@@ -61,10 +94,13 @@ html {
 body {
   background:
     radial-gradient(circle at top, rgba(212, 175, 55, 0.15), transparent 35%),
-    radial-gradient(circle at 85% 10%, rgba(229, 168, 148, 0.12), transparent 25%),
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(229, 168, 148, 0.12),
+      transparent 25%
+    ),
     radial-gradient(circle at 10% 35%, rgba(18, 16, 14, 0.8), transparent 20%),
-    linear-gradient(180deg, #12100e 0%, #0a0908 50%, #050404 100%),
-    var(--bg);
+    linear-gradient(180deg, #12100e 0%, #0a0908 50%, #050404 100%), var(--bg);
   color: var(--text);
 }
 
